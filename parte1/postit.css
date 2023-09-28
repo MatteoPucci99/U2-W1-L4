@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
+/* GENERAL STYLE */
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2em;
+}
+
+.post-container {
+  width: 900px;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  border: 20px solid brown;
+  background-color: gray;
+}
+
+.post {
+  width: 200px;
+  height: 150px;
+  background-color: blue;
+  margin: 10px;
+  box-shadow: 5px 5px 12px -2px rgba(0, 0, 0, 0.568);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARDS COLOR */
+.lightgreen {
+  background: linear-gradient(340deg, rgb(64, 87, 64), lightgreen);
+  transform: rotate(6deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.lightyellow {
+  background: linear-gradient(340deg, rgb(129, 129, 115), lightyellow);
+  transform: rotate(-10deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.plum {
+  background: linear-gradient(340deg, rgb(104, 83, 104), plum);
+  transform: rotate(-3deg);
+  transition: all 0.5s ease-in-out;
+}
+
+/* HOVER EFFECTS */
+.lightgreen:hover {
+  transform: rotate(0deg) scale(1.2);
+  box-shadow: 10px 10px 24px -2px rgba(0, 0, 0, 0.568);
+  cursor: pointer;
+  z-index: 5;
+}
+.lightyellow:hover {
+  transform: rotate(0deg) scale(1.2);
+  box-shadow: 10px 10px 24px -2px rgba(0, 0, 0, 0.568);
+  cursor: pointer;
+  z-index: 5;
+}
+.plum:hover {
+  transform: rotate(0deg) scale(1.2);
+  box-shadow: 10px 10px 24px -2px rgba(0, 0, 0, 0.568);
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* KEYFRAMES */
+
+#n1 {
+  animation: animN1 2s cubic-bezier(0.8, 0.17, 0.49, 0.78);
+}
+#n2 {
+  animation: animN2 2.3s cubic-bezier(0.8, 0.17, 0.49, 0.78);
+}
+#n3 {
+  animation: animN3 1.5s cubic-bezier(0.8, 0.17, 0.49, 0.78);
+}
+#n4 {
+  animation: animN4 1.3s cubic-bezier(0.8, 0.17, 0.49, 0.78);
+}
+#n5 {
+  animation: animN5 1.2s cubic-bezier(0.8, 0.17, 0.49, 0.78);
+}
+#n6 {
+  animation: animN6 2.5s cubic-bezier(0.8, 0.17, 0.49, 0.78);
+}
+#n7 {
+  animation: animN7 2.2s cubic-bezier(0.8, 0.17, 0.49, 0.78);
+}
+#n8 {
+  animation: animN8 2s cubic-bezier(0.8, 0.17, 0.49, 0.78);
+}
+
+@keyframes animN1 {
+  0% {
+    transform: translate(-250px, -550px) rotate(150deg) scale(4);
+    opacity: 0.5;
+  }
+}
+@keyframes animN2 {
+  0% {
+    transform: translate(200px, -750px) rotate(-170deg) scale(2);
+    opacity: 0.5;
+  }
+}
+@keyframes animN3 {
+  0% {
+    transform: translate(-150px, -600px) rotate(120deg) scale(3);
+    opacity: 0.5;
+  }
+}
+@keyframes animN4 {
+  0% {
+    transform: translate(350px, -350px) rotate(-60deg) scale(1.4);
+    opacity: 0.5;
+  }
+}
+@keyframes animN5 {
+  0% {
+    transform: translate(-350px, 500px) rotate(-90deg) scale(3);
+    opacity: 0.5;
+  }
+}
+@keyframes animN6 {
+  0% {
+    transform: translate(-50px, 550px) rotate(65deg) scale(1.3);
+    opacity: 0.5;
+  }
+}
+@keyframes animN7 {
+  0% {
+    transform: translate(-250px, 350px) rotate(-70deg) scale(4);
+    opacity: 0.5;
+  }
+}
+@keyframes animN8 {
+  0% {
+    transform: translate(-250px, 700px) rotate(150deg) scale(2);
+    opacity: 0.5;
+  }
+}
